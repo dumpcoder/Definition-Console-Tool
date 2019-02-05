@@ -1,10 +1,11 @@
-# Linux_Define_Command
+# Linux Define Command
 Python application that defines words, and used as linux command. This command works by parsing date from dictionary.com
 
  # To get command working on your linux terminal
 
-    1) copy "def" file located inside the dist directory
-    2) paste "def" file into your /bin/ directory
+    1) git clone https://github.com/dumpcoder/Linux_Define_Command.git
+    2) cd Linux_Define_Command/
+    3) sudo cp dist/def /bin/
 
 # To use command
 
