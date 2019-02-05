@@ -1,5 +1,6 @@
 # Linux Define Command
 Python application that defines words, and used as linux command. This command works by parsing date from dictionary.com
+![Console](https://raw.githubusercontent.com/dumpcoder/Linux_Define_Command/master/example.jpg)
 
  # To get command working on your linux terminal
 
