@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("word",help="word to define")
 args = parser.parse_args()
 
-source = requests.get(f'https://www.merriam-webster.com/dictionary/{args.word}').text
+source = requests.get('https://www.merriam-webster.com/dictionary/{}'.format(args.word)).text
 soup = BeautifulSoup(source, 'lxml')
 try:
     wordDef = soup.find('span', class_='dtText').text
