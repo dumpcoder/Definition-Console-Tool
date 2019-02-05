@@ -5,7 +5,8 @@ Python application that defines words, and used as linux command. This command w
 
     1) git clone https://github.com/dumpcoder/Linux_Define_Command.git
     2) cd Linux_Define_Command/
-    3) sudo cp dist/def /bin/
+    3) sudo chmod +x /dist/def
+    4) sudo cp dist/def /bin/
 
 # To use command
 
