@@ -1,17 +1,18 @@
 #!/usr/bin/python
-
 import argparse
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
+
+def define(word):
+    url = f'https://www.dictionary.com/browse/{word}'
+    html_class = 'css-kg6o37 e1q3nk1v3'
+    try: 
+        soup = BeautifulSoup(requests.get(url).text, 'html.parser')
+        return soup.find(class_=html_class).text
+    except:
+        return 'Definition not found'
 
 parser = argparse.ArgumentParser()
 parser.add_argument("word",help="word to define")
 args = parser.parse_args()
-
-source = requests.get('https://www.merriam-webster.com/dictionary/{}'.format(args.word)).text
-soup = BeautifulSoup(source, 'lxml')
-try:
-    wordDef = soup.find('span', class_='dtText').text
-    print("{}".format(wordDef))
-except Exception as e:
-    print("definition not found\n")
+define(args.word)
