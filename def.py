@@ -15,4 +15,4 @@ def define(word):
 parser = argparse.ArgumentParser()
 parser.add_argument("word",help="word to define")
 args = parser.parse_args()
-define(args.word)
+print(define(args.word))
