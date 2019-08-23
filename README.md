@@ -1,5 +1,5 @@
 # Definition Console Tool
-Python application that defines words, and used as linux command. This command works by parsing date from dictionary.com
+Python application that defines words, and used as linux command. This command works by parsing data from dictionary.com
 ![Console](https://raw.githubusercontent.com/dumpcoder/Linux_Define_Command/master/example.gif)
 
  # Requirements
